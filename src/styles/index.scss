@@ -1,13 +1,79 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
 
-    You can write your own styles here...
+body{
     
+    background-image: url('../img/TraficBackground.jpg');
+    background-attachment: fixed;
+    // opacity: 0.6;
+    background-size: cover;
+    background-color: rgb(64, 243, 133);
     
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
 
-*/
+.luzRoja{
+      margin-left: auto;
+      margin-right: auto;
+      height: 75px;
+      width: 75px;
+      background-color: darken(red,15%);
+      border-radius: 50%;
+      margin-bottom: 10px;
+      margin-top: 5px;
+      cursor: pointer;
+      &.seleccionado {
+      background-color: red;
+      box-shadow: 0 0 6em lighten(red,20%);
+    }
+      
+}
+
+
+.luzAmarilla{
+   
+      margin-left: auto;
+      margin-right: auto;
+      height: 75px;
+      width: 75px;
+      background-color: darken(yellow,15%);
+      border-radius: 50%;
+      cursor: pointer;
+      &.seleccionado {
+      background-color: yellow;
+      box-shadow: 0 0 6em lighten(yellow, 10%);
+      }
+      
+}
+.luzVerde{
+      margin-left: auto;
+      margin-right: auto;
+      height: 75px;
+      width: 75px;
+      background-color: darken(green,10%);
+      border-radius: 50%;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      cursor: pointer;
+      &.seleccionado { 
+      background-color: green;
+      box-shadow: 0 0 6em lighten(green,25%);}
+            
+}
+
+.parteSuperior{
+    height: 50px;
+    width: 10px;
+    background-color: black;
+    margin:auto;
+}
+
+.cuerpoSemaforo{
+    margin: 0 auto;   //con esta linea centro el "cuerpo" de semaforo que contiene las 3 luces
+    width: 100px;     // le da el ancho al rectangulo negro que forma el cuerpo del semaforo
+    text-align: center;
+    background-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    
+}
+
